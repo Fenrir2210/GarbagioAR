@@ -1,3 +1,5 @@
 /GarbagioAR/Temp/*
 /GarbagioAR/Packages/*
 /GarbagioAR/Library/*
+/GarbagioAR/.vs/*
+/GarbagioAR/Assembly-CSharp.csproj
