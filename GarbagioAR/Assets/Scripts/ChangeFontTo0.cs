@@ -9,16 +9,16 @@ public class ChangeFontTo0 : MonoBehaviour
 
     private void Start()
     {
-        int CurrentFont = Globals.FontSize;
-        Debug.Log("oi the current font size is: " + CurrentFont);
+        //Globals.FontSize = 12;
+        //int CurrentFont = Globals.FontSize;
+        //Debug.Log("oi the current font size is: " + CurrentFont);
+        Debug.Log("Ill fight a bitch ");
 
-        Button thisButton = this.GetComponent<Button>();
-        thisButton.onClick.AddListener(SceneChange);
     }
 
-    private void SceneChange()
-    {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-    }
+    //private void SceneChange()
+    //{
+    //    SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+    //}
 
 }
