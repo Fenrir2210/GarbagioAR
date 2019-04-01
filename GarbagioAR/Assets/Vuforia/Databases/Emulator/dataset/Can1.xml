@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Can1"/>
+
+</Tracking>
+
+<Assembly name="Can1s_assembly" assemblyId="643a24ff5a0249658bc29d9fc1f4483b">
+<Part name="Can1" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="463.943 568.411 2755.98" rotation="AD: -0.15434510610810995 -1.0012067258902886 6.181029280173525 179.543">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

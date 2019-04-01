@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="7.0.0">
+<ModelTarget name="Can1" targetId="48de9d9d75734752b04dba8c9632ae5a" version="11.0" toolVersion="3.0.0" bbox="-1294.587036 0.000000 -868.196533 339.103699 1389.755493 339.103699" previewImage="48de9d9d75734752b04dba8c9632ae5a_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Can1s_assembly" assemblyId="643a24ff5a0249658bc29d9fc1f4483b">
+<Part name="Can1" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="463.943 568.411 2755.98" rotation="AD: -0.15434510610810995 -1.0012067258902886 6.181029280173525 179.543" image="Can1_viewpoint_0000.png">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
