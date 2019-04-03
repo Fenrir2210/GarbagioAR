@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: Tuna
+  mTrackableName: Weeeeeeeed
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/GarbagioAR_OT.xml
@@ -364,10 +364,10 @@ MonoBehaviour:
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1425, y: 0.095, z: 0.095}
-  mPreviewImage: {fileID: 2800000, guid: c6b5d821771a436ab9594e4bba1c1b90, type: 3}
-  mLength: 1
-  mWidth: 0.6666667
-  mHeight: 0.6666667
+  mPreviewImage: {fileID: 2800000, guid: 1c1d36851aa94ad595476ed769086cf5, type: 3}
+  mLength: 0.1425
+  mWidth: 0.095
+  mHeight: 0.095
 --- !u!4 &1022653318
 Transform:
   m_ObjectHideFlags: 0
@@ -377,8 +377,77 @@ Transform:
   m_GameObject: {fileID: 1022653315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1425, y: 0.1425, z: 0.1425}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1344435499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344435502}
+  - component: {fileID: 1344435501}
+  - component: {fileID: 1344435500}
+  m_Layer: 0
+  m_Name: ObjectTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1344435500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344435499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1344435501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344435499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTrackableName: appleone
+  mPreserveChildSize: 0
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/GarbagioAR_OT.xml
+  mAspectRatioXY: 0.6666667
+  mAspectRatioXZ: 0.6666667
+  mShowBoundingBox: 1
+  mBBoxMin: {x: 0, y: 0, z: 0}
+  mBBoxMax: {x: 0.1425, y: 0.095, z: 0.095}
+  mPreviewImage: {fileID: 2800000, guid: ef00872dc5c84603964d75216bfc254f, type: 3}
+  mLength: 0.1425
+  mWidth: 0.095
+  mHeight: 0.095
+--- !u!4 &1344435502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344435499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1425, y: 0.1425, z: 0.1425}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
