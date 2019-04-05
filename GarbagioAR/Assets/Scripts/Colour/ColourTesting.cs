@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MediumFontSize : MonoBehaviour
+public class ColourTesting : MonoBehaviour
 {
 
-    public GameObject changeToMedium;
+    public GameObject BackgroundColour;
+    public GameObject HeaderColour;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +21,10 @@ public class MediumFontSize : MonoBehaviour
 
     }
 
-    public void TextChange()
+    public void ColourChange()
     {
-        changeToMedium.GetComponent<Text>().text = "MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM!";
-        changeToMedium.GetComponent<Text>().fontSize = 20;
+        BackgroundColour.GetComponent<Image>().color = new Color32(75, 102, 161, 255);
+        HeaderColour.GetComponent<Image>().color = new Color32(51, 72, 130, 255); 
         //changingText.GetComponent<Text>().color = Color.magenta;
 
     }
