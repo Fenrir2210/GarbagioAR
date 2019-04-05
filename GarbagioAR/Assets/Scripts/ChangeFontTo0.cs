@@ -7,18 +7,22 @@ using UnityEngine.UI;
 public class ChangeFontTo0 : MonoBehaviour
 {
 
+
     private void Start()
     {
-        //Globals.FontSize = 12;
-        //int CurrentFont = Globals.FontSize;
-        //Debug.Log("oi the current font size is: " + CurrentFont);
-        Debug.Log("Ill fight a bitch ");
-
+        Button thisButton = this.GetComponent<Button>(); 
+        thisButton.onClick.AddListener(ChangeFont);
     }
 
-    //private void SceneChange()
-    //{
-    //    SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-    //}
+   
+    private void ChangeFont()
+    {
+        Globals.FontSize = 12;
+        int CurrentFont = Globals.FontSize;
+        Debug.Log("oi the current font size is: " + CurrentFont);
+        Globals.FontSize = 14;
+        int CurrentFont2 = Globals.FontSize;
+        Debug.Log("oi the current font size is: " + CurrentFont2);
+    }
 
 }

@@ -4,28 +4,32 @@ using UnityEngine;
 
 public static class Globals
 {
+    private static int _fontSize;
+    private static Color _mainColor;
+    private static Color _topColor;
+  
     public static int FontSize{
         get{
-            return FontSize;
+            return _fontSize;
         }
         set{
-            FontSize = value;
+            _fontSize = value;
         }
     }
     public static Color mainColor {
         get{
-            return mainColor;
+            return _mainColor;
         }
         set{
-            mainColor = value;
+            _mainColor = value;
         }
     }
     public static Color topColor {
         get{
-            return topColor;
+            return _topColor;
         }
         set{
-            topColor = value;
+            _topColor = value;
         }
     }
     
