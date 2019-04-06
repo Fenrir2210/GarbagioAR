@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 71449511}
   - component: {fileID: 71449510}
   - component: {fileID: 71449509}
-  - component: {fileID: 71449508}
   m_Layer: 5
   m_Name: MediumFontButton
   m_TagString: Untagged
@@ -152,18 +151,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 375, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &71449508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71449506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0311b5a26da8427d9a7c0739fe054dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &71449509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,13 +191,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1555985415}
-        m_MethodName: TextChange
-        m_Mode: 1
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: ChangeFont
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 22
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -339,7 +327,6 @@ GameObject:
   - component: {fileID: 441311658}
   - component: {fileID: 441311661}
   - component: {fileID: 441311660}
-  - component: {fileID: 441311659}
   m_Layer: 5
   m_Name: BackToCamera
   m_TagString: Untagged
@@ -367,18 +354,6 @@ RectTransform:
   m_AnchoredPosition: {x: 191, y: 352.99988}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &441311659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441311657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0211e7daf89924ba4f28ea668d3336, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &441311660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,7 +393,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &441311661
@@ -1043,7 +1030,6 @@ GameObject:
   - component: {fileID: 1252480677}
   - component: {fileID: 1252480676}
   - component: {fileID: 1252480675}
-  - component: {fileID: 1252480674}
   m_Layer: 5
   m_Name: LargeFontButton
   m_TagString: Untagged
@@ -1071,19 +1057,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 35}
   m_SizeDelta: {x: 375, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1252480674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252480672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64c76a571cbb846e0a199e1f8503f374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  changeToLarge: {fileID: 839315583}
 --- !u!114 &1252480675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,13 +1097,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1555985413}
-        m_MethodName: TextChange
-        m_Mode: 1
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: ChangeFont
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 28
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1186,7 +1160,6 @@ GameObject:
   - component: {fileID: 1307893641}
   - component: {fileID: 1307893640}
   - component: {fileID: 1307893639}
-  - component: {fileID: 1307893642}
   m_Layer: 5
   m_Name: SmallFontButton
   m_TagString: Untagged
@@ -1254,13 +1227,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1555985414}
-        m_MethodName: TextChange
-        m_Mode: 1
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: ChangeFont
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1304,19 +1278,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307893637}
   m_CullTransparentMesh: 0
---- !u!114 &1307893642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307893637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b2011fd69de54142988d708bbda2458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  changeToSmall: {fileID: 839315583}
 --- !u!1 &1382983636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,9 +1443,8 @@ GameObject:
   - component: {fileID: 1555985411}
   - component: {fileID: 1555985410}
   - component: {fileID: 1555985409}
-  - component: {fileID: 1555985414}
-  - component: {fileID: 1555985415}
   - component: {fileID: 1555985413}
+  - component: {fileID: 1555985414}
   m_Layer: 5
   m_Name: FontMenuCanvas
   m_TagString: Untagged
@@ -1589,10 +1549,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555985408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64c76a571cbb846e0a199e1f8503f374, type: 3}
+  m_Script: {fileID: 11500000, guid: 739c68a4a65bf4a068a76ecdc83913d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeToLarge: {fileID: 839315583}
+  BackgroundColour:
+    serializedVersion: 2
+    rgba: 4288767563
+  HeaderColour:
+    serializedVersion: 2
+    rgba: 4286728243
+  FontSize: 22
 --- !u!114 &1555985414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1602,23 +1568,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555985408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b2011fd69de54142988d708bbda2458, type: 3}
+  m_Script: {fileID: 11500000, guid: a48250a69de8f46d1845ff9b028a1da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeToSmall: {fileID: 839315583}
---- !u!114 &1555985415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555985408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e18cb4cb458194f21ac5be5c45fff81e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  changeToMedium: {fileID: 839315583}
+  BackgroundColourOb: {fileID: 471063758}
+  HeaderColourOb: {fileID: 140696530}
+  TextOb: {fileID: 839315583}
 --- !u!1 &1584812126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1585,6 @@ GameObject:
   - component: {fileID: 1584812127}
   - component: {fileID: 1584812130}
   - component: {fileID: 1584812129}
-  - component: {fileID: 1584812128}
   m_Layer: 5
   m_Name: BackArrow
   m_TagString: Untagged
@@ -1658,18 +1612,6 @@ RectTransform:
   m_AnchoredPosition: {x: -197, y: 353}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1584812128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584812126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4120bc551afa00741a519db35c31459a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1584812129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,7 +1651,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SettingsMenuScene
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &1584812130
