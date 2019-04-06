@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -489,6 +489,8 @@ GameObject:
   - component: {fileID: 322767902}
   - component: {fileID: 322767901}
   - component: {fileID: 322767900}
+  - component: {fileID: 322767904}
+  - component: {fileID: 322767905}
   m_Layer: 5
   m_Name: SettingsMenuCanvas
   m_TagString: Untagged
@@ -584,6 +586,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &322767904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322767899}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739c68a4a65bf4a068a76ecdc83913d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
+  BackgroundColour:
+    serializedVersion: 2
+    rgba: 4288767563
+  HeaderColour:
+    serializedVersion: 2
+    rgba: 4286728243
+  FontSize: 22
+--- !u!114 &322767905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322767899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48250a69de8f46d1845ff9b028a1da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackgroundColourOb: {fileID: 809422866}
+  HeaderColourOb: {fileID: 2065260013}
+  TextOb: {fileID: 853496487}
 --- !u!1 &539931047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,7 +1512,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865659588}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ColourScene
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1865659588
@@ -1674,6 +1723,7 @@ GameObject:
   - component: {fileID: 2071616147}
   - component: {fileID: 2071616150}
   - component: {fileID: 2071616149}
+  - component: {fileID: 2071616151}
   - component: {fileID: 2071616148}
   m_Layer: 5
   m_Name: Button (2)
@@ -1741,7 +1791,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2071616149}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 808449787507196352, guid: 58cd7615a8b3344dd98c3a020a17cb75,
+          type: 3}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FontSizeScene
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2071616149
@@ -1781,3 +1843,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071616146}
   m_CullTransparentMesh: 0
+--- !u!114 &2071616151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071616146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9be46db3bf3442f08068b3899475eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
