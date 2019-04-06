@@ -15,7 +15,7 @@ public class BackToCameraScene : MonoBehaviour
 
     private void SceneChange()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("ARScene", LoadSceneMode.Single);
     }
 
 }
