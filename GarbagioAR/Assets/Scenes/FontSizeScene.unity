@@ -1443,7 +1443,6 @@ GameObject:
   - component: {fileID: 1555985411}
   - component: {fileID: 1555985410}
   - component: {fileID: 1555985409}
-  - component: {fileID: 1555985413}
   - component: {fileID: 1555985414}
   m_Layer: 5
   m_Name: FontMenuCanvas
@@ -1540,25 +1539,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1555985413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555985408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 739c68a4a65bf4a068a76ecdc83913d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BackgroundColour:
-    serializedVersion: 2
-    rgba: 4288767563
-  HeaderColour:
-    serializedVersion: 2
-    rgba: 4286728243
-  FontSize: 22
 --- !u!114 &1555985414
 MonoBehaviour:
   m_ObjectHideFlags: 0

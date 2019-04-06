@@ -9,11 +9,7 @@ public class Updater : MonoBehaviour
     public GameObject HeaderColourOb;
     public GameObject TextOb;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -29,5 +25,11 @@ public class Updater : MonoBehaviour
         TextOb.GetComponent<Text>().fontSize = cs.FontSize;
         BackgroundColourOb.GetComponent<Image>().color = cs.BackgroundColour;
         HeaderColourOb.GetComponent<Image>().color = cs.HeaderColour;
+        Debug.Log("INSIDEL Updater-> update");
+        Debug.Log("FontSize: " + cs.FontSize);
+        Debug.Log("BackgroundColour: " + cs.BackgroundColour);
+        Debug.Log("HeaderColour: " + cs.HeaderColour);
+
+
     }
 }
