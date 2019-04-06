@@ -256,7 +256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Blue Scheme
+  m_Text: Blue
 --- !u!222 &72493997
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -479,7 +479,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Greyscale Scheme
+  m_Text: Greyscale
 --- !u!222 &240558067
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Green Scheme
+  m_Text: Green
 --- !u!222 &806054536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1462790795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0211e7daf89924ba4f28ea668d3336, type: 3}
+  m_Script: {fileID: 11500000, guid: 4120bc551afa00741a519db35c31459a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1462790798
