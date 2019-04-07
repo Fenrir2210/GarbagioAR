@@ -535,6 +535,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366413079}
   m_CullTransparentMesh: 0
+--- !u!1 &381859801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381859802}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381859802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381859801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 62.767433, y: -4.0069447, z: 0}
+  m_LocalScale: {x: 0.5925926, y: 0.5925926, z: 0.5925926}
+  m_Children: []
+  m_Father: {fileID: 977298010}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484492900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1124,7 @@ RectTransform:
   - {fileID: 230068492}
   - {fileID: 1862035092}
   - {fileID: 1694287658}
+  - {fileID: 381859802}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1116,7 +1147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackgroundColourOb: {fileID: 1117798613}
   HeaderColourOb: {fileID: 356106001}
-  TextOb: {fileID: 916460624}
+  TextOb: {fileID: 381859801}
 --- !u!1 &1117798613
 GameObject:
   m_ObjectHideFlags: 0

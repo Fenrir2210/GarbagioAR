@@ -1,21 +1,22 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+// Melina Laird - CS4474
 
 public class Updater : MonoBehaviour
 {
+    // Drag and drop the game object into these variable spaces in the 
+    // inspector under the main canvas
     public GameObject BackgroundColourOb;
     public GameObject HeaderColourOb;
     public GameObject TextOb;
 
-   
-
     // Update is called once per frame
+    // Access the currentStatus (colours and font) and sets the header, background, and font size
     void Update()
     {
         GameObject go = GameObject.Find("CurrStatus");
+        // make sure we have a CurrStatus GameObject
         if (go == null)
         {
             Debug.LogError("Failed to find an object named CurrStatus");
@@ -23,31 +24,25 @@ public class Updater : MonoBehaviour
             return;
         }
         CurrStatus cs = go.GetComponent<CurrStatus>();
+        // case 1 : GameObject TextOb is a single gameObject of type text
+        // access text component and edit it 
         try
         {
             TextOb.GetComponent<Text>().fontSize = cs.FontSize;
-            Debug.Log("end of try");
-
         }
+        // case 2 : GameObject TextOb is an Empty with multiple text object children
+        // this is the case in Tutorial, where all boxes of text should change size
+        // access the children of type text and itterate through them, changing the font size
         catch (NullReferenceException)
         {
             Text[] textList = TextOb.GetComponentsInChildren<Text>();
-            Debug.Log("GetComponentsInChildren: " + textList[0]);
-            Debug.Log("GetComponents Children: " + textList.Length);
-
-
-            Debug.Log("end of catch");
-
-
+            for (int i = 0; i < textList.Length; i++)
+            {
+                textList[i].GetComponent<Text>().fontSize = cs.FontSize;
+            }
         }
-
+        // Only one case for colours, just change them.
         BackgroundColourOb.GetComponent<Image>().color = cs.BackgroundColour;
         HeaderColourOb.GetComponent<Image>().color = cs.HeaderColour;
-        Debug.Log("INSIDEL Updater-> update");
-        Debug.Log("FontSize: " + cs.FontSize);
-        Debug.Log("BackgroundColour: " + cs.BackgroundColour);
-        Debug.Log("HeaderColour: " + cs.HeaderColour);
-
-
     }
 }

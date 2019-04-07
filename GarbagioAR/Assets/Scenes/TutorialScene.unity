@@ -468,7 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackgroundColourOb: {fileID: 1867553874}
   HeaderColourOb: {fileID: 475230379}
-  TextOb: {fileID: 1908799471}
+  TextOb: {fileID: 1851197565}
 --- !u!114 &762654427
 MonoBehaviour:
   m_ObjectHideFlags: 0
