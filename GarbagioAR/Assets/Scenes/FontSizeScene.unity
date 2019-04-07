@@ -824,7 +824,7 @@ RectTransform:
   m_GameObject: {fileID: 839315583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.496144, y: 1.2105476, z: 0.8204164}
+  m_LocalScale: {x: 1.2904242, y: 1.2105476, z: 0.8204164}
   m_Children: []
   m_Father: {fileID: 1555985412}
   m_RootOrder: 5
@@ -865,7 +865,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Here is a sample of the font size that will be display throughout the application.
 --- !u!222 &839315586
