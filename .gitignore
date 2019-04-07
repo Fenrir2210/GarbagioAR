@@ -34,3 +34,8 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+GarbagioAR/GarbagioAR.sln
+GarbagioAR/VuforiaEditorScripts.csproj
+GarbagioAR/VuforiaScripts.csproj
+
