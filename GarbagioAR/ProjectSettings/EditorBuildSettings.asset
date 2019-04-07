@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
     guid: 359177b3500794cff960285fa6e81ed3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARScene.unity
     guid: 412ddb6dec2a6f4419d2da2a86e8bbae
   m_configObjects: {}
