@@ -16,21 +16,14 @@ public class CurrStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("STARTING");
-        Debug.Log("current instance=" + instance);
-        Debug.Log("This: " + this);
         if (instance != null)
         {
             //there is already an instance of status, self destory
-            Debug.Log("Destroying Object: " +this);
             Destroy(this);
             return;
         }
-        //GameObject go = GameObject.Find("CurrStatus");
-        //status = go.GetComponent<CurrStatus>();
         instance = this;
         DontDestroyOnLoad(this.gameObject);
-        Debug.Log("THIS IS THE END OF THE START");
     }
 
     // Update is called once per frame
@@ -49,7 +42,6 @@ public class CurrStatus : MonoBehaviour
         ColourExtensions col = new ColourExtensions();
         Color32 NewColour = col.FromString(NewBackgroundColourString);
         instance.BackgroundColour = NewColour;
-        Debug.Log("Oi cunt want soem fuck?!?! ONe");
     }
 
     public void ChangeHeaderColour(string NewHeaderColourString)
@@ -58,14 +50,13 @@ public class CurrStatus : MonoBehaviour
         Color32 NewColour = col.FromString(NewHeaderColourString);
         instance.HeaderColour = NewColour;
         Debug.Log("header colour: " + HeaderColour);
-        Debug.Log("Oi cunt want soem fuck?!?! TWO");
-        
+
 
     }
 
     private void OnDestroy()
     {
-        Debug.Log("a version of CurrStatus was was destroyed!!!");
+        Debug.Log("a version of CurrStatus was was destroyed");
     }
 
     public void LoadScene(string SceneName)
